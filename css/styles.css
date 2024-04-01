@@ -367,6 +367,7 @@ a{
      /* section 3 */
 .team{
         width: 1440px;
+        /* min-width: 320px; */
         padding: 120px 0;
         margin: 0 auto;
         background-color:  #F4F4FD;
@@ -454,45 +455,80 @@ a{
     height: 40px;
 }
 
+
+
+
 /* section 4 */
 .section-portfilio{
+    min-width: 320px;
     padding-top: 120px;
     padding-bottom: 120px;
     margin: 0 auto;
+}    
+
+.container{
+    padding: 0;
 }
+
 .portfilio {
+    min-width: 218px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11; 
     letter-spacing: 0.02em;
-    margin: 0 auto;
+
+    /* margin: 0 auto; */
+
+    padding-left: 51px;
+    padding-right: 51px;
+
     margin-bottom: 72px;
     text-align: center;
     text-transform: capitalize;
-    color: #2E2F42
-    ;
+    color: #2E2F42;
 }
+
 .img-portfilio-flex{
-    width: 1128px;
     display: flex;
-    column-gap: 24px;
-    row-gap: 48px;
     flex-wrap: wrap;
+    
+    padding: 0 16px;
+
+    direction: column;
+
+    column-gap: 72px;
+
+    
+
+    /* width: 1128px; */
+    
+    /* column-gap: 24px; */
+
+
+    /* row-gap: 48px; */
+}
+
+.portfilio-list{
+    width: 100%;
+    /* width: 360px; */
+
+    height: 420px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-portfilio-img{
     position: relative;
     overflow: hidden;
+
+    width: 100%;
+
 }
 .portfilio-img{
     display: block;
 }
 
-.portfilio-list{
-    width: 360px;
-    height: 420px;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .portfilio-list:hover .portfilio-overflow{
     transform: translateY(0%);
@@ -503,6 +539,7 @@ a{
 }
 .container-cart{
     width: 360px;
+
     height: 120px;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
@@ -510,12 +547,25 @@ a{
  }
  
 .portfiloio-title{
-    margin-left: 16px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2; 
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    color: #2E2F42;
+
+    /* margin-left: 16px; */
     text-align: left;
 }
 .portfilio-text{
-    margin-left: 16px;
-    margin-top: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    color: #434455;
+
+    /* margin-left: 16px; */
+    /* margin-top: 8px; */
     margin-bottom: 32px;
     text-align: left; 
 }
@@ -534,6 +584,8 @@ a{
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(100%);
 }
+
+
 
 /* section footer */
 .footer{
