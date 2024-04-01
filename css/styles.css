@@ -23,8 +23,7 @@ a{
     width: 320px;
     padding: 0 15px;
     margin: 0 auto;
-
-    }
+}
 
 /* header */
 .header{
@@ -140,8 +139,7 @@ a{
 
 /* section 1 hero */
 .section-hero{
-    height: 432px;
-    padding-top: 72px;
+    height: 436px;
     background-color: #2e2f42;
     margin: 0 auto;
     text-align: center;
@@ -155,14 +153,21 @@ a{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
 }
 
+.container-hero{
+    width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .hero{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    max-width: 496px;
     margin: 0 auto;
     color: #FFFFFF;
+    padding: 0 52px;
+    padding-top: 72px;
     margin-bottom: 72px;
 }
 
@@ -176,37 +181,63 @@ a{
     max-width: 496px;
     min-width: 169px;
     height: 56px;
-    margin: 48px auto;
+    margin: 0 auto;
     border: none;
     border-radius: 4px;
     display: block;
     background-color: #4D5AE5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
 .button-hero:hover,
 .button-hero:focus{
     background-color:  #404BBF;
 }
 
 /* table section 1 */
-/* @media (min-width: 768px) and (max-width: 1157px){
+@media (min-width: 768px) and (max-width: 1157px){
 
+.section-hero{
+    min-width: 768px;
+    height: 100%;
+}
 
-} */
-
-
-/* desctop section 1 */
-@media (min-width: 1158px){
-    .section-hero{
-        height: 600px;
-        padding-top: 188px;
-
-    }
+.container-hero{
+    min-width: 100%;
+    padding: 112px 0;
+    margin: 0 auto;
+}
 
 .hero{
     font-size: 56px;
     line-height: 1.07;
     margin: 0 auto;
+    padding: 0 136px;
+    margin-bottom: 36px;
+}
+}
+
+
+/* desctop section 1 */
+@media (min-width: 1158px){
+
+    .section-hero{
+    min-width: 1158px;
+    height: 100%;
+}
+
+.container-hero{
+    min-width: 100%;
+    padding: 188px 0;
+    margin: 0 auto;
+}
+
+
+.hero{
+    min-width: 600px;
+    height: 100%;
+    padding: 0;
+    margin-bottom: 48px;
 }
 }
 
@@ -216,11 +247,13 @@ a{
 .section-display{
     min-width: 320px;
     padding-top: 96px;
+    margin-bottom: 96px;
 }
 
 .list-all{
     display: flex;
     flex-direction: column;
+    padding: 0 16px;
     gap: 72px;
     
 }
@@ -273,19 +306,18 @@ a{
 
 /* Tablet section 2*/
 @media (min-width: 768px) and (max-width: 1157px){
-.container{
-    width: 768px;
-    margin: 0 auto;
-    }
 
 .section-display{
     padding-top: 96px;
-    padding-bottom: 96px;
+    margin-bottom: 0;
 }
 
-
+.container{
+    width: 768px;
+}
 
 .list-all{
+    padding: 16px 0;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
@@ -300,8 +332,6 @@ a{
     width: calc((100% - 56px) / 2);
     margin-bottom: 72px;    
 }
-    
-    
 }
 
 
@@ -318,6 +348,7 @@ a{
 .section-display{
     padding-top: 120px;
     padding-bottom: 120px;
+    margin-bottom: 0;
 }
 
 .list-icons-display{
@@ -334,8 +365,8 @@ a{
 .list-all{
     display: flex;
     flex-direction: row;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-left: 15px;
+    padding-right: 15px;
     gap: 24px;
 }
 
@@ -366,15 +397,17 @@ a{
 
      /* section 3 */
 .team{
-        width: 1440px;
-        /* min-width: 320px; */
-        padding: 120px 0;
+        min-width: 320px;
+        padding: 96px 0;
         margin: 0 auto;
         background-color:  #F4F4FD;
     }
+
 .img-text-flex{
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 28px;
 }
 
 .team-all{
@@ -388,7 +421,10 @@ a{
     text-transform: capitalize;
     color: #2E2F42;
 }
+
 .team-backgr{
+    width: 264px;
+    margin-bottom: 72px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0 0 4px 4px;
     background-color: #FFFFFF;
@@ -453,6 +489,34 @@ a{
 .team-icon-link{
     width: 40px;
     height: 40px;
+}
+
+
+/* table */
+@media (min-width: 768px) and (max-width: 1157px){
+    
+    .img-text-flex{
+        min-width: 768px;
+        display: flex;
+        flex-direction: row;
+        padding: 0 108px;
+        column-gap: 64px;
+        gap: 24px;
+}
+}
+
+/* desctop section 3 */
+
+@media (min-width: 1158px){
+
+.img-text-flex{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    column-gap: 72px;
+    gap: 24px;
+    justify-content: center;
+}
 }
 
 
