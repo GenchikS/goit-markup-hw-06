@@ -19,11 +19,11 @@ a{
 
 /* container content */
 
-.container{
+/* .container{
     width: 320px;
     padding: 0 15px;
     margin: 0 auto;
-}
+} */
 
 /* header */
 .header{
@@ -153,7 +153,8 @@ a{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob.jpg);
 }
 
-@media screen and (min-device-pixel-ratio: 2){
+@media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
 .section-hero{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob-2x.jpg);
 }
@@ -212,6 +213,13 @@ a{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+.section-hero{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab-2x.jpg);
+}
+}
+
 .container-hero{
     width: 100%;
     padding: 112px 0;
@@ -236,14 +244,18 @@ a{
     width: 1158px;
     /* height: 436px; */
     height: 100%;
-    
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+.section-hero{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+}
+}
 .container-hero{
     width: 100%;
     padding: 188px 0;
@@ -355,17 +367,17 @@ a{
 
 @media (min-width: 1158px){
 
-    .section-display{
-        width: 1158px;
-        padding-top: 120px;
-        padding-bottom: 120px;
-        margin-bottom: 0;
-    }
+.section-display{
+    width: 1158px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-bottom: 0;
+}
 
-    .container-display{
+.container-display{
     padding: 0 15px;
     margin: 0 auto;
-    }
+}
 
 
 
@@ -719,28 +731,24 @@ a{
 }
 
 
-
-
-
-
-
-
 /* section footer */
 .footer{
-    padding: 100px 0;
+    width: 320px;
     background-color: #2e2f42;
     margin: 0 auto;
-    
 }
 
 .container-footer{
     display: flex;
-    align-items: baseline;
+    padding: 96px 16px;
+    flex-direction: column;
+    width: 100%;
 }
 
 .container-logo{
-    margin-right: 120px;
+    margin-bottom: 72px;
 }
+
 .logo-footer{
     font-family: "Raleway" sans-serif;
     font-weight: 700;
@@ -749,11 +757,14 @@ a{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-block;
+    margin: 0 92px;
     margin-bottom: 16px;
     color:#4d5ae5;
 }
 
-.footer .studio{color:  #f4f4fd;}
+.footer .studio{
+    color:  #f4f4fd;
+}
 
 .footer-text{
     max-width: auto;
@@ -767,14 +778,16 @@ a{
 .container-footer-icons{
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin-bottom: 72px;
  }
 
 .footer-title-media{
-    margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5; 
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
     color: #ffffff;
 }
 
@@ -810,7 +823,11 @@ a{
 /* footer subscribe */
 
 .footer-subscribe{
-   margin-left: 80px;;
+    width: 288px;
+    justify-content: center;
+    text-align: center;
+
+   /* margin-left: 80px;; */
 }
 
 .subscribe-title{
@@ -824,8 +841,16 @@ a{
 
 .form-subscribe{
     display: flex;
-    gap: 24px;
+    
+ /* gap: 24px; */
+
+    flex-direction: column;
 }
+
+.form-subscribe-label{
+    margin-bottom: 16px;
+}
+
 
 .placeholder-e-mail{
     font-weight: 400;
@@ -852,7 +877,13 @@ a{
     letter-spacing: 0.04em;
     color: #ffffff;
     background-color: #4d5ae5;
-    min-width: 165px;
+
+    width: 165px;
+    margin: 0 auto;
+    /* margin-left: 77px;
+    margin-right: 78px; */
+    /* min-width: 165px; */
+
     height: 40px;
     padding: 8px 24px;
     border: none;
@@ -864,6 +895,107 @@ a{
     fill: #ffffff;
     margin-left: 16px;
 }
+
+/* table footer */
+
+@media (min-width: 768px) and (max-width: 1158px){
+.footer{
+    width: 768px;
+}
+
+.container-footer{
+    padding-top: 96px;
+    padding-left: 108px;
+    padding-right: 164px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-logo{
+    width: 264px;
+    min-height: 112px;
+    margin-right: 24px;
+}
+
+.logo-footer{
+    margin: 0;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.container-footer-icons{
+    width: 208px;
+    height: 80px;
+    text-align: left;
+}
+
+.container-one-two{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-subscribe{
+    width: 453px;
+    min-height: 80px;
+    text-align: left;
+}
+
+.form-subscribe{
+    flex-direction: row;
+}
+
+.form-subscribe-label{
+    margin-right: 24px;
+}
+}
+
+/* desctop footer */
+
+@media (min-width: 1158px){
+.footer{
+    width: 1440px;
+    
+}
+
+.container-footer{
+    flex-direction: row;
+    padding: 100px 0;
+    justify-content: center;
+    /* margin: 0 auto; */
+}
+
+.container-footer-icons{
+    margin: 0;
+    margin-right: 80px;
+}
+
+.container-logo{
+    margin: 0;
+    margin-right: 120px;
+}
+
+.logo-footer{
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.container-footer-icons{
+    text-align: left;
+}
+
+.footer-subscribe{
+    text-align: left;
+}
+
+.form-subscribe{
+    flex-direction: row;
+}
+
+.form-subscribe-label{
+    margin-right: 24px;
+}
+}
+
 
 /* modal container */
 
