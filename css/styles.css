@@ -26,16 +26,14 @@ a{
     margin: 0 auto;
 } */
 
+
 /* header */
 .header{
     /* min-width: 1440px; */
     width: 320px;
-    
     margin: 0 auto;
-    
-    /* border-bottom: 1px solid  #e7e9fc;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); */
-
+    border-bottom: 1px solid  #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container-header{
@@ -43,9 +41,8 @@ a{
     display: flex;
     justify-content: center;
     padding: 16px;
-    border: none;
-    
 }
+
 .header-navi{
     display: flex;
     align-items: center;
@@ -60,7 +57,6 @@ a{
     letter-spacing: 0.03em;
     align-items: center;
     text-transform: uppercase;
-    margin-right: 76px;
     color: #4d5ae5;
 }
 
@@ -77,7 +73,6 @@ a{
 
 .header-list{
     display: none;
-    /* display: flex; */
     gap: 40px;
 }
 
@@ -129,16 +124,15 @@ a{
 
 
 .adress{
-    margin-left: 332px;
-    align-items: center;
+    /* margin-left: 332px; */
+    /* align-items: center; */
 }
 
 .address-navi{
     display: none;
-    /* display: flex; */
-    padding-top: 24px;
-    padding-bottom: 24px;
-    gap: 40px;
+    /* padding-top: 24px; */
+    /* padding-bottom: 24px; */
+    /* gap: 40px; */
     font-style: normal;
     
 }
@@ -156,9 +150,11 @@ a{
     color:#404bbf;
 }
 .adress-mail{
-    margin-left: 250px;
+    /* margin-left: 250px; */
 }
-.adress-tel{margin-left: 40px;}
+.adress-tel{
+    /* margin-left: 40px; */
+}
 
 
 
@@ -211,9 +207,6 @@ a{
     border: 0;
 }
 
-.header-list {
-}
-
 .mob-navi-style:not(:last-child) {
     margin-bottom: 40px;
 }
@@ -234,12 +227,6 @@ a{
     color: #2e2f42;
 }
 
-.mob-address {
-}
-.mob-address-navi {
-
-}
-
 .mob-adress-tel {
     font-weight: 500;
     font-size: 20px;
@@ -258,10 +245,6 @@ a{
     margin-bottom: 48px;
 }
 
-.contacts {
-    
-}
-
 .mob-all-icons{
     display: flex;
     direction: row;
@@ -269,6 +252,37 @@ a{
 }
 
 
+@media (min-width: 768px) and (max-width: 1158px){
+
+.header{
+    width: 768px;
+    padding: 16px;
+}
+
+.button-menu{
+    display: none;
+}
+
+.container-header{
+    padding:0;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 120px;
+}
+
+.header-list{
+    display: flex;
+    margin-right: 121px;
+}
+
+.address-navi{
+    display: flex;
+    flex-direction: column;
+}
+
+}
 
 /* section 1 hero */
 .section-hero{
