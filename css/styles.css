@@ -17,19 +17,9 @@ a{
     text-decoration: none;
 }
 
-/* container content */
-
-/* .container-content{
-    display: flex;
-    width: 320px;
-    padding: 0 15px;
-    margin: 0 auto;
-} */
-
 
 /* header */
 .header{
-    /* min-width: 1440px; */
     width: 320px;
     margin: 0 auto;
     border-bottom: 1px solid  #e7e9fc;
@@ -122,19 +112,9 @@ a{
     width: 100%;
 }
 
-
-.adress{
-    /* margin-left: 332px; */
-    /* align-items: center; */
-}
-
 .address-navi{
     display: none;
-    /* padding-top: 24px; */
-    /* padding-bottom: 24px; */
-    /* gap: 40px; */
     font-style: normal;
-    
 }
 
 .contacts{
@@ -149,13 +129,6 @@ a{
 .contacts:focus{
     color:#404bbf;
 }
-.adress-mail{
-    /* margin-left: 250px; */
-}
-.adress-tel{
-    /* margin-left: 40px; */
-}
-
 
 
 /* header modal menu */
@@ -252,6 +225,8 @@ a{
 }
 
 
+/* table header */
+
 @media (min-width: 768px) and (max-width: 1158px){
 
 .header{
@@ -265,7 +240,7 @@ a{
 .container-header{
     padding: 0;
     align-items: center;
-    /* justify-content: space-around; */
+    justify-content: space-between;
 }
 
 .logo{
@@ -276,7 +251,6 @@ a{
 .header-list{
     display: flex;
     margin-left: 104px;
-    margin-right: 104px;
 }
 
 .address-navi{
@@ -284,6 +258,41 @@ a{
     flex-direction: column;
     padding-right: 16px;
 }
+}
+
+
+/* desctop header */
+
+@media (min-width: 1158px){
+
+.header{
+    min-width: 1158px;
+}
+
+.container-header{
+    justify-content: space-between;
+}
+    
+.button-menu{
+    display: none;
+}
+    
+.header-list{
+    display: flex;
+    margin-left: 76px;
+}
+
+.address-navi{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+}
+
 }
 
 
