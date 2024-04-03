@@ -256,7 +256,6 @@ a{
 
 .header{
     width: 768px;
-    padding: 16px;
 }
 
 .button-menu{
@@ -264,25 +263,30 @@ a{
 }
 
 .container-header{
-    padding:0;
+    padding: 0;
     align-items: center;
+    /* justify-content: space-around; */
 }
 
 .logo{
-    margin-right: 120px;
+    padding-left: 16px;
+    
 }
 
 .header-list{
     display: flex;
-    margin-right: 121px;
+    margin-left: 104px;
+    margin-right: 104px;
 }
 
 .address-navi{
     display: flex;
     flex-direction: column;
+    padding-right: 16px;
+}
 }
 
-}
+
 
 /* section 1 hero */
 .section-hero{
