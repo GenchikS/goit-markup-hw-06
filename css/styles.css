@@ -258,6 +258,10 @@ a{
     flex-direction: column;
     padding-right: 16px;
 }
+
+.header-modal-menu{
+    display: none;
+}
 }
 
 
@@ -291,6 +295,10 @@ a{
 .address{
     display: flex;
     align-items: center;
+}
+
+.header-modal-menu{
+    display: none;
 }
 
 }
