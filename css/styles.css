@@ -83,7 +83,6 @@ a{
     color: #2E2F42;
 }
 
-
 .text-navi-studio{
     font-weight: 500;
     font-size: 16px;
@@ -136,13 +135,10 @@ a{
 
 
 /* header modal menu */
-
 .header-modal-menu {
     position: fixed;
     top: 0;
     background-color: #ffffff;
-    /* width: 100vw; */
-    /* width: 100%; */
     width: 320px;
     height: 100vh;
     padding: 24px;
@@ -230,7 +226,6 @@ a{
 
 
 /* table header */
-
 @media (min-width: 768px) and (max-width: 1158px){
 
 .header{
@@ -270,7 +265,6 @@ a{
 
 
 /* desctop header */
-
 @media (min-width: 1158px){
 
 .header{
@@ -304,7 +298,6 @@ a{
 .header-modal-menu{
     display: none;
 }
-
 }
 
 
@@ -410,8 +403,8 @@ a{
 
 
 /* desctop section 1 */
-@media (min-width: 1158px){
 
+@media (min-width: 1158px){
 .section-hero{
     min-width: 1158px;
     height: 100%;
@@ -431,7 +424,6 @@ a{
     width: 100%;
     padding: 188px 0;
 }
-
 
 .hero{
     min-width: 600px;
