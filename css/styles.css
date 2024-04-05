@@ -275,6 +275,7 @@ a{
 }
 
 .container-header{
+    padding: 0;
     justify-content: space-between;
 }
     
@@ -429,6 +430,7 @@ a{
 }
 
 .hero{
+    font-size: 56px;
     min-width: 600px;
     height: 100%;
     padding: 0;
@@ -539,8 +541,6 @@ a{
     padding: 0 15px;
     margin: 0 auto;
 }
-
-
 
 .list-icons-display{
     display: flex;
