@@ -257,6 +257,10 @@ a{
     padding-right: 16px;
 }
 
+.adress-mail{
+    margin-bottom: 12px;
+}
+
 .header-modal-menu{
     display: none;
 }
@@ -438,8 +442,7 @@ a{
 .section-display{
     width: 320px;
     margin: 0 auto;
-    padding-top: 96px;
-    margin-bottom: 96px;
+    padding: 96px 16px;
 }
 
 .list-all{
@@ -502,15 +505,13 @@ a{
 .section-display{
     width: 768px;
     margin: 0 auto;
-    padding-top: 96px;
 }
 
 .list-all{
-    padding: 16px 0;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 24px;
+    gap: 72px 24px;
 }
 
 .title-text{
@@ -519,7 +520,6 @@ a{
 
 .display-list{
     width: calc((100% - 56px) / 2);
-    margin-bottom: 72px;    
 }
 }
 
